@@ -1,11 +1,12 @@
-import { Button, HStack } from "@chakra-ui/react";
+import { Outlet } from "react-router";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <HStack>
-      <Button>Click me</Button>
-      <Button>Click me</Button>
-    </HStack>
+    <>
+      <Navbar />
+      <Outlet />
+    </>
   );
 }
 
